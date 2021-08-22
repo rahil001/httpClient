@@ -1,0 +1,22 @@
+{
+  "name": "httpclient",
+  "version": "1.0.0",
+  "description": "axios based library with extra features",
+  "main": "HttpClient.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahil001/httpClient.git"
+  },
+  "author": "rahil_manzar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahil001/httpClient/issues"
+  },
+  "homepage": "https://github.com/rahil001/httpClient#readme",
+  "devDependencies": {
+    "axios": "^0.21.1"
+  }
+}
