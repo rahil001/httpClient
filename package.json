@@ -1,5 +1,5 @@
 {
-  "name": "httpclient",
+  "name": "axios-httpclient",
   "version": "1.0.0",
   "description": "axios based library with extra features",
   "main": "HttpClient.js",
@@ -12,11 +12,14 @@
   },
   "author": "rahil_manzar",
   "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bugs": {
     "url": "https://github.com/rahil001/httpClient/issues"
   },
   "homepage": "https://github.com/rahil001/httpClient#readme",
   "devDependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.4"
   }
 }

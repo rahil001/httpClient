@@ -32,7 +32,7 @@ import { defaultHttpClient } from './HttpClient';
 import { HttpClient } from './HttpClient';
 ```
 
-### Composite App
+### Main container App
 ```
 import { defaultHttpClient } from './HttpClient';
 
@@ -68,7 +68,7 @@ const refreshTokenCallback = async (request) => {
     });
 
  
-// composite can also access all methods and make all HTTP calls
+// main container can also access all methods and make all HTTP calls
     defaultHttpClient.get('/api/users?page=2', {
         retry: true,
         retryErrorCodes: [501]
@@ -121,14 +121,14 @@ const refreshTokenCallback = async (request) => {
         }
     }
 ```
-### Feature App
-1. If feature App wants to clone an instance from default Instance created by composite App then call the clone method like below.
-calling clone method will merge the config of feature and composite app and returns a new instance.
+### child mini App
+1. If child mini App wants to clone an instance from default Instance created by composite App then call the clone method like below.
+calling clone method will merge the config of child mini and main app and returns a new instance.
 3. second argument is the key passed while cloning so as to keep the reference of cloned instance.
-4. cloned instance will eventually be deleted from the memory if feature App unmounts or removed.
+4. cloned instance will eventually be deleted from the memory if child mini App unmounts or removed.
 
 #### Create a cloned instance
-This is how feature App can clone from default instance
+This is how child mini/feature App can clone from default instance
 ```
 import { defaultHttpClient } from '@walmart/functional-components';
  
